@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+}
+
+.page{
+    display: grid;
+    height: 100svh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.header{
+    border: solid 2px red;
+    grid-area: 1 / 2 / 1 / 3;
+}
+.sidebar{
+    border: solid 5px yellow;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.main{
+    background-color: #e5e7eb;
+    border: solid 2px blue;
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
